@@ -10,28 +10,28 @@ function App() {
 
   const [todoList, setTodoList] = useState([
     {
-      id: 1,
+      id: nanoid(),
       title: 'Apprendre React',
       description: 'Les joies des useState, useEffect, etc...',
       priority: 'high',
       isCompleted: false
     },
     {
-      id: 2,
+      id: nanoid(),
       title: 'Aller manger',
       description: 'Un bon sandwish de chez Lolotte',
       priority: 'low',
       isCompleted: true
     },
     {
-      id: 3,
+      id: nanoid(),
       title: 'Voir les useState',
       description: 'Les états locaux, on aime',
       priority: 'medium',
       isCompleted: true
     },
     {
-      id: 4,
+      id: nanoid(),
       title: 'Voir les formulaires',
       description: 'Comment on rajoute un élément depuis un formulaire',
       priority: 'high',
@@ -48,7 +48,6 @@ function App() {
         isCompleted: false
       }
   )
-
   const handleChanges = (e) => {
     // const {name, value} = e.target;
     // setNewTask({...newTask, [name]: value})
