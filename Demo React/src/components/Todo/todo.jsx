@@ -1,7 +1,7 @@
 import TodoItems from "../Todo-items/todo-items.jsx";
 import './todo.css';
 
-const Todo = ({todoList}) => {
+const Todo = ({todoList = []}) => {
     // const { cours, eleves } = props;
 
     const todos = todoList.map(item => (
@@ -12,10 +12,14 @@ const Todo = ({todoList}) => {
             isCompleted={item.isCompleted} />
     ))
     return (
+    <section className='todo'>
+        <div className='todo__container'>
+            <ul>
+                {todos}
+            </ul>
+        </div>
+    </section>
 
-        <ul>
-            {todos}
-        </ul>
 
 
 

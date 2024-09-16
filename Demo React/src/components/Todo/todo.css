@@ -1,17 +1,55 @@
-.title {
-    color: red
+.todo {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.todo__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo__titre-container {
+    margin-bottom: 15px;
+}
+
+.todo__titre {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+.todo__description-container {
+    margin-top: 10px;
+}
+
+.todo__description {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .todo__description--isActive {
-    background-color: greenyellow;
-    font-size: large;
+    background-color: #e0f7fa;
+    font-weight: bold;
+    color: #00796b;
 }
 
 .todo__description--isCompleted {
-    color: darkgrey;
+    background-color: #f5f5f5;
+    color: #bdbdbd;
+    font-style: italic;
 }
 
 :is(.todo__description--isActive, .todo__description--isCompleted) {
     text-decoration: underline;
     text-underline-offset: 2px
 }
+

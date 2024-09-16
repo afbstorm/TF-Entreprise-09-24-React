@@ -1,34 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import List from "./components/Exo collections/List/list.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  // Exercice Collections :
+    const productList = [
+        {id: 1, price: 0.89, name: 'Pomme', isPromo: false},
+        {id: 2, price: 1.19, name: 'Poire', isPromo: false},
+        {id: 3, price: 5.79, name: 'Banane', isPromo: true}
+    ]
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+        <List productList={productList} />
+    </div>
   )
 }
 

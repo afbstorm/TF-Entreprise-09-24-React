@@ -31,12 +31,12 @@ const TodoItems = ({title, description, isCompleted}) => {
 
     return (
         <li>
-            <div>
-            <h2>
+            <div className='todo__titre-container'>
+                <h2 className='todo__titre'>
                     {title}
                 </h2>
             </div>
-            <div>
+            <div className='todo__description-container'>
                 {ternaryExample()}
                 {/*{andExample()}*/}
                 {/*{ifElseExample()}*/}
