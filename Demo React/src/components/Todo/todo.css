@@ -1,3 +1,17 @@
 .title {
     color: red
 }
+
+.todo__description--isActive {
+    background-color: greenyellow;
+    font-size: large;
+}
+
+.todo__description--isCompleted {
+    color: darkgrey;
+}
+
+:is(.todo__description--isActive, .todo__description--isCompleted) {
+    text-decoration: underline;
+    text-underline-offset: 2px
+}

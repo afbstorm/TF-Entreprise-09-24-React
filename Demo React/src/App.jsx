@@ -3,11 +3,26 @@ import './App.css'
 
 function App() {
 
-  const nbrEleves = 3
-  const formateur = 'Kévin'
+  // const nbrEleves = 3
+  // const formateur = 'Kévin'
+
+  const todoList = [
+    {
+      id: 1,
+      title: 'Apprendre React',
+      description: 'Les joies des useState, useEffect, etc...',
+      isCompleted: false
+    },
+    {
+      id: 2,
+      title: 'Aller manger',
+      description: 'Un bon sandwish de chez Lolotte',
+      isCompleted: true
+    }
+  ]
 
   return (
-    <Todo cours='React' eleves={nbrEleves} formateur={formateur}/>
+    <Todo todoList={todoList} />
   )
 }
 
