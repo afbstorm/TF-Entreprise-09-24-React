@@ -1,7 +1,7 @@
 import Todo from './components/Todo/todo.jsx';
 import {nanoid} from "nanoid";
 import './App.css'
-import {useState} from "react";
+import {useCallback, useState} from "react";
 import TaskForm from './components/TaskForm/task-form.jsx';
 
 function App() {
@@ -40,9 +40,9 @@ function App() {
     },
   ]);
 
-  const handleNewTask = (task) => {
-    setTodoList([...todoList, task])
-  }
+  const handleNewTask = useCallback((task) => {
+    setTodoList(todoList => [...todoList, task]);
+  }, []);
 
   return (
       <>
