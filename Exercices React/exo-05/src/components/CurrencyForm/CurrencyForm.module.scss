@@ -1,0 +1,16 @@
+
+.form {
+    border: solid 0.1ch darkcyan;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5ch;
+
+    * {
+        padding: 1ch;
+    }
+
+    :not(:last-child) {
+        margin-bottom: 1ch;
+    }
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "currency" : "Euro",
+        "convert" : 1
+    },
+    {
+        "currency": "Dollar",
+        "convert": 1.12
+    },
+    {
+        "currency": "Yen",
+        "convert": 157.45
+    },
+    {
+        "currency": "Shilling",
+        "convert": 150.32
+    },
+    {
+        "currency": "Roupie",
+        "convert": 89.67
+    },
+    {
+        "currency": "Peso",
+        "convert": 24.56
+    },
+    {
+        "currency": "Dinar",
+        "convert": 0.34
+    }
+]

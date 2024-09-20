@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    color: darkcyan;
+    border-bottom: 0.1ch darkcyan solid;
+    width: 100%;
+
+    p {
+        font-size: 1.5em;
+        margin: 0;
+        padding: 1.5ch;
+    }
+}
